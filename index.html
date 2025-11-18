@@ -3,9 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>포트폴리오 | 김수연</title>
+    <!-- 리셋 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- 글꼴 -->
+    <!--프리텐다드(v1.3.9) 웹글꼴 연결주소-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" /> 
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- css/Js -->
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-    
+    <main>
+        <section id="intro">
+            <span><img src="./images/check.png" alt=""></span>
+            <div class="intro_title">
+                <h1 class="logo"><img src="./images/portfolio.png" alt="포트폴리오"></h1>
+                <p class="role">Web Designer & Publisher</p>
+            </div>
+            <span><img src="./images/check.png" alt=""></span>
+        </section>
+        <section id="profile">
+            <div class="left">
+                <p><em>“아이디어를 디자인하고<br>
+                    코드로 완성하는 디자이너입니다.”</em></p>
+                <h2>profile</h2>
+                <div class="profile_inner_left">
+                    <p class="medium">이름</p>
+                    <p class="medium">연락처</p>
+                    <p class="medium">이메일</p>
+                </div>
+                <div class="profile_inner_right">
+                    <p>김수연 / KIM SU YEON</p>
+                    <p>010-9918-6626</p>
+                    <p>kimsuyeon1231@naver.com</p>
+                </div>
+            </div>
+            <div class="right">
+                <h2>Education</h2>
+                <div class="education_inner">
+                    <p class="medium">25.07.15 - 25.12.31</p>
+                    <p>그린아카데미 UI/UX 웹디자인 과정 수료</p>
+                </div>
+                <div class="skill">
+                    <h2>Skill</h2>
+                    <p class="medium">Design</p>
+                    <div class="design_inner">
+                        <p>· Figma</p>
+                        <p>· photoshop</p>
+                        <p>· illustrator</p>
+                    </div>
+                    <p class="medium">Platforms</p>
+                    <p>· cafe24</p>
+                    <p class="medium">Publishing</p>
+                    <div class="publishing_inner">
+                        <p>· HTML</p>
+                        <p>· CSS / SCSS</p>
+                        <p>· JavaScript</p>
+                        <p>· 반응형 웹</p>
+                        <p>· Github</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="project">
+            <div class="tap_group">
+                <p class="folder_active">project 01</p>
+                <button type="button">01</button>
+                <p class="folder_active">project 02</p>
+                <button type="button">02</button>
+                <p class="folder_active">project 03</p>
+                <button type="button">03</button>
+                <p class="folder_active">project 04</p>
+                <button type="button">04</button>
+            </div>
+            <div class="content">
+                <span class="project_img"><img src="./images/project1.png" alt="프로젝트 미리보기"></span>
+            </div>
+            <div class="containers">
+                <h3>PETHROOM ReDesign</h3>
+                <div class="project_inner_left">
+                    <p class="medium">구성</p>
+                    <p class="medium">사용스킬</p>
+                    <p class="medium">제작기간</p>
+                </div>
+                <div class="project_inner_right">
+                    <p>메인페이지 (index)</p>
+                    <p>figma,  photoshop, HTML5, CSS3, javascript</p>
+                    <p>2주 소요</p>
+                </div>
+            </div>
+            <div class="link_group">
+                <a href="#">원본 사이트</a>
+                <a href="#">GitHub 프로토타입</a>
+            </div>
+        </section>
+        <section id="design">
+            <h3>Design</h3>
+            <div class="swiper design_content">
+                <div class="swiper-wrapper design_containers">
+                    <div class="swiper-slide"><img src="./images/design1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/design2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/design3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/design4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/design5.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/design1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/design2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/design3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/design4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/design5.png" alt=""></div>
+                </div>
+            </div>
+            <div class="control">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section id="end">
+            <span><img src="./images/thankyou.png" alt=""></span>
+            <p class="tel_email">
+                Tel. 010-9918-6626<br>
+                E-mail. kimsuyeon1231@naver.com
+            </p>
+        </section>
+    </main>
 </body>
 </html>

@@ -1,0 +1,31 @@
+    @font-face {
+        font-family: 'YeogiOttaeJalnan';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+        font-weight: normal;
+        font-display: swap;
+    }
+
+body, html {scroll-behavior: smooth;}
+body main {background-color: #fff9ed; max-width: 1920px;}
+/* 인트로 */
+main #intro {background-color: coral;
+    display: flex; flex-flow: nowrap; justify-content: space-between;
+    padding: 115px 0;
+}
+main #intro .intro_title {padding-top: 200px;}
+main #intro .logo {width: 510px; height: 134px;}
+main #intro .logo img {width:100%}
+main #intro .role {
+    text-align: center; font-size: 1.75rem; font-weight: 500; color: #767676;
+}
+/* 프로필 */
+main #profile {
+    background-image: url(../images/2bg.png); height: 980px; background-position: center; background-size: cover; background-repeat: no-repeat;
+    display: flex; flex-flow: nowrap; gap: 332px; justify-content: center; align-items: center;
+}
+main #profile p em {
+        font-family: 'YeogiOttaeJalnan'; line-height: 1.5; font-size: 1.5rem; margin-bottom: 400px; display: inline-block;
+}
+main #profile h2 {font-weight: 700; font-size: 1.438rem; margin-bottom: 30px;}
+main #profile 
+main #profile 
