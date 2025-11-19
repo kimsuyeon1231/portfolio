@@ -17,9 +17,21 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- css/Js -->
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./script/index.js" defer></script>
 </head>
 <body>
     <main>
+        <div class="link_remocon">
+            <a href="#profile">profile
+                <img src="./images/link_arrow.png" alt="">
+            </a>
+            <a href="#project">project
+                <img src="./images/link_arrow.png" alt="">
+            </a>
+            <a href="#design">design
+                <img src="./images/link_arrow.png" alt="">
+            </a>
+        </div>
         <section id="intro">
             <span><img src="./images/check.png" alt=""></span>
             <div class="intro_title">
@@ -33,15 +45,17 @@
                 <p><em>“아이디어를 디자인하고<br>
                     코드로 완성하는 디자이너입니다.”</em></p>
                 <h2>profile</h2>
-                <div class="profile_inner_left">
-                    <p class="medium">이름</p>
-                    <p class="medium">연락처</p>
-                    <p class="medium">이메일</p>
-                </div>
-                <div class="profile_inner_right">
-                    <p>김수연 / KIM SU YEON</p>
-                    <p>010-9918-6626</p>
-                    <p>kimsuyeon1231@naver.com</p>
+                <div class="profile_inner">
+                    <div class="profile_inner_left">
+                        <p class="medium">이름</p>
+                        <p class="medium">연락처</p>
+                        <p class="medium">이메일</p>
+                    </div>
+                    <div class="profile_inner_right">
+                        <p>김수연 / KIM SU YEON</p>
+                        <p>010-9918-6626</p>
+                        <p>kimsuyeon1231@naver.com</p>
+                    </div>    
                 </div>
             </div>
             <div class="right">
@@ -51,7 +65,7 @@
                     <p>그린아카데미 UI/UX 웹디자인 과정 수료</p>
                 </div>
                 <div class="skill">
-                    <h2>Skill</h2>
+                    <h2 class="skill_title">Skill</h2>
                     <p class="medium">Design</p>
                     <div class="design_inner">
                         <p>· Figma</p>
@@ -59,7 +73,7 @@
                         <p>· illustrator</p>
                     </div>
                     <p class="medium">Platforms</p>
-                    <p>· cafe24</p>
+                    <p class="Platforms_inner">· cafe24</p>
                     <p class="medium">Publishing</p>
                     <div class="publishing_inner">
                         <p>· HTML</p>
@@ -72,35 +86,105 @@
             </div>
         </section>
         <section id="project">
-            <div class="tap_group">
-                <p class="folder_active">project 01</p>
-                <button type="button">01</button>
-                <p class="folder_active">project 02</p>
-                <button type="button">02</button>
-                <p class="folder_active">project 03</p>
-                <button type="button">03</button>
-                <p class="folder_active">project 04</p>
-                <button type="button">04</button>
-            </div>
-            <div class="content">
-                <span class="project_img"><img src="./images/project1.png" alt="프로젝트 미리보기"></span>
-            </div>
-            <div class="containers">
-                <h3>PETHROOM ReDesign</h3>
-                <div class="project_inner_left">
-                    <p class="medium">구성</p>
-                    <p class="medium">사용스킬</p>
-                    <p class="medium">제작기간</p>
+            <div class="project_group">
+                <div class="tap_group">
+                    <button type="button" class="tab_btn active" data-tab="1">01</button>
+                    <button type="button" class="tab_btn" data-tab="2">02</button>
+                    <button type="button" class="tab_btn" data-tab="3">03</button>
+                    <button type="button" class="tab_btn" data-tab="4">04</button>
                 </div>
-                <div class="project_inner_right">
-                    <p>메인페이지 (index)</p>
-                    <p>figma,  photoshop, HTML5, CSS3, javascript</p>
-                    <p>2주 소요</p>
-                </div>
-            </div>
-            <div class="link_group">
-                <a href="#">원본 사이트</a>
-                <a href="#">GitHub 프로토타입</a>
+                <div class="content active" data-tab="1">
+                    <span class="project_img"><img src="./images/project1.jpg" alt="프로젝트 미리보기"></span>
+                    <div class="containers">
+                        <h3>PETHROOM ReDesign</h3>
+                        <div class="project_inner">
+                            <div class="project_inner_left">
+                                <p class="medium">구성</p>
+                                <p class="medium">사용스킬</p>
+                                <p class="medium">제작기간</p>
+                            </div>
+                            <div class="project_inner_right">
+                                <p>메인페이지 (index)</p>
+                                <p>figma,  photoshop, HTML5,<br>
+                                    CSS3, javascript</p>
+                                <p>2주 소요</p>
+                            </div>    
+                        </div>
+                        <div class="link_group">
+                            <a href="#" class="medium">원본 사이트</a>
+                            <a href="#" class="medium">GitHub 프로토타입</a>
+                        </div>
+                    </div>
+                </div>    
+                <div class="content active" data-tab="2">
+                    <span class="project_img"><img src="./images/project2.jpg" alt="프로젝트 미리보기"></span>
+                    <div class="containers">
+                        <h3>BANILA.COM ReDesign</h3>
+                        <div class="project_inner">
+                            <div class="project_inner_left">
+                                <p class="medium">구성</p>
+                                <p class="medium">사용스킬</p>
+                                <p class="medium">제작기간</p>
+                            </div>
+                            <div class="project_inner_right">
+                                <p>메인페이지 (index)</p>
+                                <p>figma,  photoshop, HTML5,<br>
+                                    CSS3, javascript</p>
+                                <p>2주 소요</p>
+                            </div>    
+                        </div>
+                        <div class="link_group">
+                            <a href="#" class="medium">원본 사이트</a>
+                            <a href="#" class="medium">GitHub 프로토타입</a>
+                        </div>
+                    </div>
+                </div>    
+                <div class="content active" data-tab="3">
+                    <span class="project_img"><img src="./images/project2.jpg" alt="프로젝트 미리보기"></span>
+                    <div class="containers">
+                        <h3>INSPIRE ReDesign</h3>
+                        <div class="project_inner">
+                            <div class="project_inner_left">
+                                <p class="medium">구성</p>
+                                <p class="medium">사용스킬</p>
+                                <p class="medium">제작기간</p>
+                            </div>
+                            <div class="project_inner_right">
+                                <p>메인페이지 (index)</p>
+                                <p>figma,  photoshop, HTML5,<br>
+                                    CSS3, javascript</p>
+                                <p>2주 소요</p>
+                            </div>    
+                        </div>
+                        <div class="link_group">
+                            <a href="#" class="medium">원본 사이트</a>
+                            <a href="#" class="medium">GitHub 프로토타입</a>
+                        </div>
+                    </div>
+                </div>    
+                <div class="content active" data-tab="4">
+                    <span class="project_img"><img src="./images/project2.jpg" alt="프로젝트 미리보기"></span>
+                    <div class="containers">
+                        <h3>SALOM ReDesign</h3>
+                        <div class="project_inner">
+                            <div class="project_inner_left">
+                                <p class="medium">구성</p>
+                                <p class="medium">사용스킬</p>
+                                <p class="medium">제작기간</p>
+                            </div>
+                            <div class="project_inner_right">
+                                <p>메인페이지 (index)</p>
+                                <p>figma,  photoshop, HTML5,<br>
+                                    CSS3, javascript</p>
+                                <p>2주 소요</p>
+                            </div>    
+                        </div>
+                        <div class="link_group">
+                            <a href="#" class="medium">원본 사이트</a>
+                            <a href="#" class="medium">GitHub 프로토타입</a>
+                        </div>
+                    </div>
+                </div>    
             </div>
         </section>
         <section id="design">
