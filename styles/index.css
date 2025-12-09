@@ -37,26 +37,27 @@ main #intro .role {
 /* 프로필 */
 main #profile {
     background-image: url(../images/2bg.png); height: 980px; background-position: center; background-size: cover; background-repeat: no-repeat;
-    display: flex; flex-flow: nowrap; gap: 332px; justify-content: center; padding-top: 200px;
+    display: flex; flex-flow: nowrap; gap: 332px; justify-content: center; padding-top: 100px;
 }
 main #profile p em {
-        font-family: 'YeogiOttaeJalnan'; line-height: 1.5; font-size: 1.5rem; margin-bottom: 400px; display: inline-block;
+        font-family: 'YeogiOttaeJalnan'; line-height: 1.5; font-size: 1.5rem;display: inline-block;
 }
 /* 공통글자 */
 main #profile h2 {font-weight: 700; font-size: 1.438rem; margin-bottom: 30px;}
-main #profile p {font-size: 1.125rem; padding-bottom: 20px;}
+main #profile p {padding-bottom: 20px;}
 
 main #profile .medium {font-weight: 500;}
-main #profile .left .profile_inner {display: flex; flex-wrap: nowrap; gap: 50px;}
-main #profile .right .education_inner {display: flex; flex-wrap: nowrap;  gap: 108px;}
-main #profile .right .design_inner,
-main #profile .right .Platforms_inner, 
-main #profile .right .publishing_inner {display: flex; flex-wrap: nowrap; gap: 20px; padding-left: 20px;}
-main #profile .right .design_inner p,
-main #profile .right .Platforms_inner , 
-main #profile .right .publishing_inner p {margin-bottom: 30px;}
-main #profile .right .skill_title {margin-bottom: 50px;}
-main #profile .right .education_inner:nth-child(2) p {margin-bottom: 100px;}
+
+
+main #profile .left span {margin-bottom: 43px; display: inline-block; width: 360px;}
+main #profile .left span img {width: 100%;}
+
+main #profile .left .profile_inner  {margin-bottom: 50px; display:  flex;}
+
+main #profile .right p em {margin: 60px auto 100px;}
+main #profile .right .skill .design_inner  {display: flex; margin-bottom: 50px;}
+main #profile .right .skill .Platforms_inner {margin-bottom: 50px;}
+main #profile .right .skill .publishing_inner  {display: flex;}
 
 /* 프로젝트 */
 
@@ -66,13 +67,13 @@ main #project {
     height: 980px; display: flex; flex-flow: column; align-items: center; padding-top: 112px;
 }
 main #project .project_group .tap_group
-{display: flex; flex-wrap: nowrap; align-self: start;}
+{display: flex; flex-wrap: nowrap; align-self: start; }
 
 main #project .project_group .tap_group .folder_active, main #project .project_group .tap_group button {
-    font-family:'YeogiOttaeJalnan'; border-top-left-radius: 20px; border-top-right-radius: 20px;text-align: center;
+    font-family:'YeogiOttaeJalnan'; border-top-left-radius: 20px; border-top-right-radius: 20px;text-align: center; 
 }
 main #project .project_group .tap_group .tab_btn.active {/* 활성화 될 경우만 스타일 다르게 */
-    font-size: 1.25rem; background-color: #DEEDCA; width: 220px; padding: 20.5px 0; 
+    font-size: 1.25rem; background-color: #DEEDCA; width: 220px; padding: 20.5px 0;
 }
 .tab_btn.active::before {/* 숫자 앞에 프로젝트 */
     content: "project ";
@@ -80,11 +81,11 @@ main #project .project_group .tap_group .tab_btn.active {/* 활성화 될 경우
 
 
 main #project .project_group .tap_group button {
-    font-size: 1rem; background-color: #C8D6B6; width: 110px; padding: 25px 0; 
+    font-size: 1rem; background-color: #C8D6B6; width: 110px; padding: 25px 0;
 }
 main #project .project_group .content {
     display: flex; flex-wrap: nowrap; align-items: center; justify-content:center; gap:96px; border-radius: 20px; border-top-left-radius: 0;
-    background-color: #DEEDCA; padding: 91.5px 96px; height: 683px; width: 1423px;
+    background-color: #DEEDCA; padding: 91.5px 96px; height: 683px; width: 1423px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 main #project .project_group .content .project_img {width: 655px; height: 500px; display: inline-block;}
 main #project .project_group .content .project_img img {width:100%;}
@@ -99,9 +100,9 @@ main #project .project_group .containers p {font-size: 1.125rem; padding-bottom:
 main #project .project_group .containers .project_inner .project_inner_right p {color: #515151;}
 main #project .project_group .containers .project_inner .project_inner_left p:nth-child(2) {padding-bottom: 57px;}
 main #project .project_group .containers p:last-child { padding-bottom: 0;}
-main #project .project_group .link_group a:first-child {margin-right: 20px;}
+main #project .project_group .link_group {display: flex; gap: 10px;}
 main #project .project_group .link_group a {
-    background-color: #FFF; display: inline-block; border-radius: 50px; width: 189px; line-height: 57px; text-align: center; font-weight: 500;
+    background-color: #FFF; display: inline-block; border-radius: 50px; width: 100%; line-height: 57px; text-align: center; font-weight: 500;
 }
 
 /* 비활성화된 프로젝트들은 안보이게 */
