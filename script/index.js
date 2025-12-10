@@ -54,3 +54,24 @@ tabBtns.forEach(btn => {
 
   });
 });
+
+
+/* 디자인팝업 */
+const popup_bg = document.querySelector('.popup_bg')
+const designProject = document.querySelectorAll('#design .swiper-slide img')
+
+popup_bg.style.display = 'none'/* 팝업 초반 숨기기 */
+
+for(let i of designProject){/* SNS디자인, 상세디자인 클릭 시 팝업 출력 JS */
+    i.addEventListener('click',function(){
+        popup_bg.style.display = 'flex'
+        popup_bg.children[0].scrollTo(0,0);
+        popup_bg.children[0].style.width = '800px';/* SNS,상세디자인 팝업 출력 크기 */
+        popup_bg.children[0].style.height = '800px';
+        popup_bg.children[0].children[0].src = i.src;
+        wrap.mousewheel.disable();/* 마우스 휠 막기 */
+    })
+}
+
+/* 팝업 클릭 시 숨기기 */
+popup_bg.addEventListener('click',()=>{ popup_bg.style.display = 'none'; wrap.mousewheel.enable(); })/* 마우스 휠 풀기 */
